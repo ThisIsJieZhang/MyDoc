@@ -1,8 +1,8 @@
-#1、下载并安装iterm2
+# 1、下载并安装iterm2
 
 ```https://iterm2.com/downloads/stable/iTerm2-3_4_6.zip```
 
-#2、打开iterm2安装oh my zsh
+# 2、打开iterm2安装oh my zsh
 
 执行如下脚本进行安装
 
@@ -10,7 +10,7 @@
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-#3、安装powerlevel10k主题
+# 3、安装powerlevel10k主题
 
 ```shell
 cd ./.oh-my-zsh/themes
@@ -22,7 +22,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/the
 vi ~/.zshrc 设置如下内容 使用p10k主题 ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
 
-#4、安装语法高亮插件和自动补全插件
+# 4、安装语法高亮插件和自动补全插件
 
 ```
 cd ~/.oh-my-zsh/custom/plugins/
@@ -45,7 +45,7 @@ plugins=(
 另外历史记录时间戳可以改成如下格式
 HIST_STAMPS="yyyy-mm-dd"
 
-#5、p10k configure向导模式进行p10k的主题定制
+# 5、p10k configure向导模式进行p10k的主题定制
 
 定制过程中第一步提示下载字体
 如果下载失败，先退出iterm2,再登录，输入代理命令后 运行p10k configure
@@ -67,7 +67,7 @@ p10k configure
 注释调上面这句
 ```
 
-#6、iterm2 中使用Nerd Fonts字体
+# 6、iterm2 中使用Nerd Fonts字体
 
 ```
 https://www.nerdfonts.com/font-downloads
@@ -77,7 +77,7 @@ https://www.nerdfonts.com/font-downloads
 安装字体
 iTerm2中修改为hack nerd fonts
 
-#7、iterm2背景图片定制
+# 7、iterm2背景图片定制
 效果如下
 以上就是大致的配置与美化过程，更多的美化与配置可以参考如下文章
 https://cloud.tencent.com/developer/article/1639115
