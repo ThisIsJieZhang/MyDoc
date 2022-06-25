@@ -59,7 +59,7 @@ p10k configure
 界面美观且输命令也非常高效
 历史记录时间戳的效果
 
-###使用 p10k(Oh My Zsh 主题)在 Shell 中保持 Git 分支名称不被截断
+## 使用 p10k(Oh My Zsh 主题)在 Shell 中保持 Git 分支名称不被截断
 
 ```
 ~/.p10k.zsh配置文件内
