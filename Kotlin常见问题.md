@@ -156,12 +156,15 @@ fun main() {
 }
 ```
 
-```运行结果：
+```
+运行结果：
 
 person:Person@610455d6
 吃柠檬
 work 8 hour,earn ￥480
-result is:Person@610455d6```
+result is:Person@610455d6
+```
+
 
 
 |函数名|函数块内使用对象|返回值|是否扩展函数|适用场景|
