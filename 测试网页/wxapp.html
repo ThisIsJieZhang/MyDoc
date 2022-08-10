@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>qlight首页</title>
+
+<script type="text/javascript" src="wxapp.js"></script>
+<script type="text/javascript" src="shortcut.js"></script>
+<script type="text/javascript" src="qb.js"></script>
+<script type="text/javascript">
+
+    var option = {};
+	option["apps"] = [
+        {'appId': 'wxa75efa648b60994b', 'path': 'home/video'}, 
+        {'appId': 'wxa75efa648b60994b', 'path': 'home/video'}
+    ];
+    option["source"] = "100004";
+
+    window.browser.wxapp.getMiniProgramHistory(function(ret) {
+        console.log("success ret:"+ret);
+
+        // alert('调用成功' + ret);
+    });
+
+    window.browser.wxapp.getMiniProgramHistory(function(ret) {
+        console.log("success ret:"+ret);
+
+        // alert('调用成功' + ret);
+    });
+
+    // alert(window.browser.qb.batchQueryShortcutsState);
+    function clickAction() {
+        // 相当于调用openUrl，且newWindow参数为true
+        // window.open('https://www.qq.com');
+
+        // 当前qlight页面打开
+        window.location.href = 'qb://setting';
+
+        // openUrl方法表示用原生的页面打开
+        // 参数为true时，表示用新窗口打开页面，返回时不会回到之前的qlight页面
+        // 参数为false时，表示跳转到其他页面，返回时会回到qlight页面
+        // let params = {
+        //     url:'https://www.qq.com',
+        //     newWindow:'true',
+        //     animated:'false'
+        // }
+        // browser.app.openUrl(function(ret) {
+
+        // }, function(error) {
+
+        // }, params);
+        
+        // console.log("clickAction");
+        // let params = {
+        //     "options": [
+        //         {
+        //             'jumpUrl':'https://www.qq.com',
+        //             'title':'',
+        //             'iconUrl':'',
+        //             'hashID': '2222',
+        //             'sourceId':2
+        //         },
+        //         {
+        //             'jumpUrl':'https://www.qq.com',
+        //             'title':'',
+        //             'iconUrl':'',
+        //             'hashID': '2222',
+        //             'sourceId':2
+        //         }
+        //     ]
+        // };
+
+        // window.browser.qb.batchQueryShortcutsState(params, function(res) {
+        //     alert(JSON.stringify(res));
+        //     /* 返回结果
+        //     {
+        //         "retCode": "1"
+        //         "addedArray": [0,0]
+        //     }
+        //     */
+        // });
+    }
+
+</script>
+
+
+</head>
+
+<style>
+    .box{            
+        width: 300px;            
+        height: 300px;            
+        background-color: burlywood;            
+        display: table-cell;            
+        text-align: center;/*使元素水平居中 */            
+        vertical-align: middle;/*使元素垂直居中 */        
+    }
+
+</style>
+ 
+<body>
+<!-- <span style="padding:200px 100px 100px 100px; height: 500px; background-color: red; margin-top: 200px;">
+    
+    <h2><a href="https://www.baidu.com">腾讯新闻</a></h2>
+</span> -->
+
+<button class="box" onclick="clickAction()">点击跳转</button>
+
+<!-- <video width="320" height="240" controls="" webkit-playsinline="true" playsinline="true">
+    <source src="https://test.static.res.qq.com/nav/testplay.mp4" type="video/mp4">
+ </video>
+
+ <video width="600" height="240" controls="" webkit-playsinline="true" playsinline="true" x5-video-player-type="h5">
+    <source src="https://cxd-qicdn.app33.cn/video/欧尚Z6介绍视频_1641965566963.mp4" type="video/mp4">
+    https://cxd-qicdn.app33.cn/video/欧尚Z6介绍视频_1641965566963.mp4
+ </video>
+
+ <video width="320" height="240" controls="" webkit-playsinline="true" playsinline="true">
+    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+ </video> -->
+
+</body>
+ 
+</html>
